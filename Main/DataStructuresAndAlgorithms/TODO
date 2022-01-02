@@ -1,0 +1,15 @@
+@LearningNote
+show slice method to them using
+
+```
+const arr = [1, 2, 3, 4, 5, 6]
+console.log(arr.splice(1, 3))
+console.log(arr)
+```
+
+show flat method to them using
+
+```
+console.log([[[1]], 2].flat())
+console.log([[[1]], 2].flat(10))
+```
