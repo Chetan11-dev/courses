@@ -1,24 +1,26 @@
 test("regex", () => {
-  const inputs = [
-    "This line has junk text.",
-    "121.18.19.20",
-    "2001:0db8:0000:0000:0000:ff00:0042:8329",
-    "1050:1000:2000:ab00:5:600:300c:326a",
-  ]
+  const inputs = `
+  (75, 180)
+  (+90.0, -147.45)
+  (77.11112223331, 149.99999999)
+  (+90, +180)
+  (90, 180)
+  (-90.00000, -180.0000)
+  (75, 280)
+  (+190.0, -147.45)
+  (77.11112223331, 249.99999999)
+  (+90, +180.2)
+  (90., 180.)
+  (-090.00000, -180.0000)
+`
+    .split("\n")
+    .map((s) => s.trim())
+    .map(console.log)
 
-  function isV4(s: string) {
-    const ipv4 = /^[0-9]{0,3}\.[0-9]{0,3}\.[0-9]{0,3}\.[0-9]{0,3}$/
-    return ipv4.test(s)
-  }
+  const regex = /\/\*(.|\n)*?\*\//g
+  //    /[a-zA-Z0-9_]+\@[a-zA-Z0-9_]+.com/g
 
-  function isV6(s: string) {
-    const ipv6 =
-      /^[0-9a-z]{1,4}:[0-9a-z]{1,4}:[0-9a-z]{1,4}:[0-9a-z]{1,4}:[0-9a-z]{1,4}:[0-9a-z]{1,4}:[0-9a-z]{1,4}:[0-9a-z]{1,4}$/
-
-    return ipv6.test(s)
-  }
-
-  console.log({ result: isV6(inputs[3]) })
+  //   console.log({ result: inputs[0].match(regex) })
 })
 
 export {}
