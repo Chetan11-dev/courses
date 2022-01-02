@@ -1,0 +1,14 @@
+Q1) Write a function that return the maximum element in an array.
+	Function Signature: function getMaximumElement(nums: number[]): number {} 
+	Input: [1,2,3,4]
+	Output: 4
+
+Q2) Write a function that reverses an array.
+	Function Signature: function reverse(nums: number[]): void {}
+	Input: [1,2,3,4]
+	Output: [4,3,2,1]
+
+Q3) Write a function that returns the common elements in two array.
+	Function Signature: function getCommonElements(nums1: number[], nums2: number[]): number[] {}
+	Input: [1,2,3,4], [1,2,8,9,10]
+	Output: [1,2]

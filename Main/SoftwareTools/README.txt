@@ -1,0 +1,1 @@
+Tools-SO,G2,AWS,JamStack,Ghost,WP,Ubuntu,Mac,Notion
